@@ -6,13 +6,13 @@ This is a small Go program that listens on a port, and responds with whatever yo
 $ lstn -h
 Usage of lstn:
   -body string
-			The http response body. Defaults to an empty string.
+			The http response body.
   -path string
-			The request path to respond to. Defaults to /. (default "/")
+			The request path to respond to. (default "/")
   -port string
-			The port to listen on. Listens on 3000 by default. (default "3000")
+			The port to listen on. (default "3000")
   -status int
-			The http status to return. Returns 200 by default. (default 200)
+			The http status to return. (default 200)
 
 $ lstn --port 5000 --status 500 --body '{"foo":"bar"}' --path /
 ```
